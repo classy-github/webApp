@@ -9,6 +9,9 @@ import './utils/register-vant'
 // 引入amfe-flexible动态设置rem基准值
 import 'amfe-flexible'
 
+// 引入style样式
+import './styles/index.less'
+
 new Vue({
   router,
   store,
