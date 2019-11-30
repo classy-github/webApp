@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-Vue.config.productionTip = false
-
+// 引入加载执行注册模块
+import './utils/register-vant'
 new Vue({
   router,
   store,
