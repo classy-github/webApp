@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  name: 'App',
+  // 挂载组件路由
+  components: {},
+  // 存放父组件向子组件传过来的数据
+  props: {},
+  // 存放组件中的数据/带返回值的函数
+  data () {
+    return {}
+  },
+  // 计算属性/类似于购物车数据变动时
+  computed: {},
+  // 自动监听data里面的数据
+  watch: {
+  },
+  // 组件加载时,执行里面的逻辑
+  created () {},
+  // 存放方法/存放实现哪些功能
+  methods: {}
 }
+</script>
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<style scoped></style>
